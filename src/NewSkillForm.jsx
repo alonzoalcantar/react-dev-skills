@@ -1,5 +1,4 @@
 export default function NewSkillForm() {
-    // Application logic, etc. goes here
     return (
     <form>
    
