@@ -1,25 +1,27 @@
+
+
 import SkillListItem from "./SkillListItem";
 
-export default function SkillList() {
+export default function SkillList({skills}) {
 
-    // const skills = [
-    //     { name: "HTML", level: 5 },
-    //     { name: "CSS", level: 3 },
-    //     { name: "JavaScript", level: 4 },
-    //     { name: "Python", level: 2 },
-    //   ];
-      
-    const skills = ['Html' , 'CSS' , 'Javascript', 'Python']
+    
+
 
     return (
         <div>
         <ul>
 
-        {skills.map(skill => (
-            <SkillListItem
-            skill = {skill}/>
-        ))}
+        {skills.map((skill, idx) => (
+
+        <SkillListItem 
+        skill={skill.name} 
+        level={skill.level} 
+        key={idx} />
+      ))}
+      
         </ul>
         </div>
     );
+
+
   }

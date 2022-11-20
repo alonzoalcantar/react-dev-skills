@@ -1,4 +1,7 @@
 export default function Counter({sleepLost, handleCount}) {
+
+
+    
     return(
 
         <div>
